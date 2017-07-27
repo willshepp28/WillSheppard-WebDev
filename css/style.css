@@ -148,6 +148,12 @@ main {
     flex-direction: column;
            padding: 14px;
     padding-top: 100px;
+    margin-bottom: 115px;
+}
+
+
+main section {
+    margin-bottom: 115px;
 }
 
 
@@ -336,6 +342,7 @@ footer {
     
 
     /* Medium Devices, Desktops */
+
     @media only screen and (min-width : 992px) {
          /* body {
             background: lightblue;
