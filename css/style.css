@@ -82,6 +82,16 @@ a {
     text-decoration: none;
 }
 
+/* Reusable Styles  */
+.shadow {
+        box-shadow: 0 0 8px rgba(0,0,0,.1) inset, 0 0 16px rgba(0,0,0,.1);
+    border: 1px solid #ccc;
+}
+
+.light-grey {
+    color: #666;
+}
+
 
 
 /* Body  */
@@ -113,9 +123,6 @@ nav li {
     font-size: 12px;
 }
 
-nav a {
-        color: grey;
-}
 
 nav a:hover {
     text-decoration: underline;
@@ -154,13 +161,6 @@ main {
 
 main section {
     margin-bottom: 115px;
-}
-
-
-
-
-main p {
-    color: #666;
 }
 
 .about {
@@ -203,8 +203,6 @@ section.projects h1 {
     margin-right: 10px;
        margin-bottom: 30px;
     min-height: 235px;
-    box-shadow: 0 0 8px rgba(0,0,0,.1) inset, 0 0 16px rgba(0,0,0,.1);
-    border: 1px solid #ccc;
     border-radius: 3px;
 }
 
