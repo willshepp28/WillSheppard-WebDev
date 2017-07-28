@@ -72,6 +72,10 @@ body {
     flex-direction: column;
 }
 
+h1 {
+        font-size: 48px;
+}
+
 
 li {
     list-style-type: none;
@@ -82,7 +86,20 @@ a {
     text-decoration: none;
 }
 
+section {
+    padding: 20px;
+}
+
 /* Reusable Styles  */
+
+nav li, p {
+    font-size: 17px;
+}
+
+section h1 {
+    margin-bottom: 50px;
+}
+
 .shadow {
         box-shadow: 0 0 8px rgba(0,0,0,.1) inset, 0 0 16px rgba(0,0,0,.1);
     border: 1px solid #ccc;
@@ -90,6 +107,10 @@ a {
 
 .light-grey {
     color: #666;
+}
+
+.light-greyb2 {
+    background: #F5F5F5;
 }
 
 
@@ -119,9 +140,7 @@ nav {
 
 }
 
-nav li {
-    font-size: 12px;
-}
+
 
 
 nav a:hover {
@@ -153,22 +172,20 @@ nav a:hover {
 main {
         display: flex;
     flex-direction: column;
-           padding: 14px;
     padding-top: 100px;
-    margin-bottom: 115px;
+  
 }
 
 
-main section {
-    margin-bottom: 115px;
-}
 
 .about {
     padding: 15px;
+    margin-bottom: 135px;
 }
 
 .projects {
     margin-top: 50px;
+    border: 1px solid #ddd;
 }
 
 section.projects h1 {
@@ -185,9 +202,6 @@ section.projects h1 {
 .tech-used img {
     width: 46%;
 }
-
-.projects {}
-
 
 .mywork {
     display: flex;
@@ -351,12 +365,19 @@ footer {
         width: 500px;
         }
 
+        .about {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
         .tech-used img {
-    width: 15%;
+    width: 19%;
 }
 
         .work-thumbnail {
-    width: 31%;
+    width: 25%;
 }
 
 
