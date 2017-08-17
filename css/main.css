@@ -11,10 +11,7 @@
 
 
 
-/* ==========================================================================
-        CSS Reset
-   ========================================================================== */
-/**/
+/* CSS Reset  */
 
 html, body, ul, ol, li, form, fieldset, legend
 {
@@ -66,67 +63,13 @@ abbr, acronym
 
 
 
-/* ==========================================================================
-        Global Styles
-   ========================================================================== */
-/**/
+/* Global  */
 
 body {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
    font-weight: 300;
    display: flex;
     flex-direction: column;
-}
-
-.header1 {
-
-   /*  header.style.backgroundColor = 'white';
-                    header.style.position = '';
-                    header.style.position = 'none';
-                    header.style.borderBottom = ''; */
-    background-color: white;
-    position: none;
-    border-bottom: none;
-}
-
-.header2 {
-    background: rgba(192,192,192,0.3);
-    z-index: 100;
-    position: fixed;
-    top:0;
-    height: 50px;
-    width: 100%;
-    border-bottom: 2px solid #ddd;
-}
-
-.mobile-header1 {
-    background-color: white;
-    position: none;
-    border-bottom: none;
-}
-
-.mobile-header2 {
-    /*  header.style.backgroundColor = 'rgba(192,192,192,0.3)';
-                    header.style.zIndex = '100';
-                    header.style.position = 'fixed';
-                    header.style.top = '0';
-                    // header.style.height = '50px';
-                    header.style.width = '100%';
-                    header.style.borderBottom = '2px solid #ddd'; */
-                    background: rgba(192,192,192,0.3);
-                    z-index: 100;
-                    position: fixed;
-                    top:0;
-                    width: 100%;
-                    border-bottom: 2px solid #ddd;
-}
-
-
-
-
-
-h1 {
-        font-size: 48px;
 }
 
 
@@ -139,53 +82,73 @@ a {
     text-decoration: none;
 }
 
-section {
-    padding: 20px;
-}
-
-/* ==========================================================================
-    Reusable Styles
-   ========================================================================== */
-/**/
-
-nav li, p {
-    font-size: 17px;
-}
-
-section h1 {
-    margin-bottom: 50px;
-}
-
+/* Reusable Styles  */
 .shadow {
-        /* box-shadow: 0 0 8px rgba(0,0,0,.1) inset, 0 0 16px rgba(0,0,0,.1); */
-         /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  */
-         /* box-shadow: 0 3px 20px rgba(84, 61, 110, 0.4); */
+        box-shadow: 0 0 8px rgba(0,0,0,.1) inset, 0 0 16px rgba(0,0,0,.1);
     border: 1px solid #ccc;
-    box-shadow: 0 3px 20px rgba(84, 61, 110, 0.4);
 }
 
 .light-grey {
     color: #666;
 }
 
-.light-greyb2 {
-   background: #f9f9fb none repeat scroll 0 0;
-}
 
 
-.purple { background-image: linear-gradient(to right bottom, #58488a, #5d64d0); }
-
-
-/* ==========================================================================
-        Body Styles
-   ========================================================================== */
-/**/
+/* Body  */
 
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
         padding: 10px;
+}
+
+header { z-index: 100; background: white;}
+
+.header1 {
+
+    background-color: white;
+    position: none;
+    border-bottom: none;
+    z-index: 100;
+  
+}
+
+.header2 {
+
+    background-color: rgba(0,128,225,0.9);
+    color: white;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    transition-delay: 1s;
+    transition: background-color 5s linear;
+    transition: color 1s linear;
+}
+
+.mobile-header1 {
+    background-color: white;
+    position: none;
+    border-bottom: none;
+    z-index: 10;
+    
+}
+
+.mobile-header2 {
+
+    
+                    background-color: rgba(0,128,225,0.9);
+                    color: white;
+                    z-index: 100;
+                    position: fixed;
+                    top:0;
+                    width: 100%;
+                    border-bottom: 2px solid #ddd;
+                    transition-delay: 1s;
+                    transition: background-color 5s linear;
+                    transition: color 1s linear;
 }
 
 .logo {
@@ -204,7 +167,9 @@ nav {
 
 }
 
-
+nav li {
+    font-size: 12px;
+}
 
 
 nav a:hover {
@@ -236,20 +201,22 @@ nav a:hover {
 main {
         display: flex;
     flex-direction: column;
+           padding: 14px;
     padding-top: 100px;
-  
+    margin-bottom: 115px;
 }
 
 
+main section {
+    margin-bottom: 115px;
+}
 
 .about {
     padding: 15px;
-    margin-bottom: 135px;
 }
 
 .projects {
     margin-top: 50px;
-    border: 1px solid #ddd;
 }
 
 section.projects h1 {
@@ -267,6 +234,9 @@ section.projects h1 {
     width: 46%;
 }
 
+.projects {}
+
+
 .mywork {
     display: flex;
     flex-wrap: wrap;
@@ -279,7 +249,7 @@ section.projects h1 {
     background: #FAFAFA;
     height: auto;
     margin-right: 10px;
-       margin-bottom: 45px;
+       margin-bottom: 30px;
     min-height: 235px;
     border-radius: 3px;
 }
@@ -348,10 +318,7 @@ footer {
 
 
 
-/* ==========================================================================
-        Media Queries
-   ========================================================================== */
-/**/
+
 
     /* Custom, iPhone Retina */ 
     @media only screen and (min-width : 320px) {
@@ -404,7 +371,6 @@ footer {
 
         .work-thumbnail {
     width: 40%;
-    
 }
     }
 
@@ -416,10 +382,6 @@ footer {
 
         .logo {
             font-size: 38px;
-        }
-
-        .work-thumbnail {
-            margin-right: 28px;
         }
     }
 
@@ -437,19 +399,12 @@ footer {
         width: 500px;
         }
 
-        .about {
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
         .tech-used img {
-    width: 19%;
+    width: 15%;
 }
 
         .work-thumbnail {
-    width: 25%;
+    width: 31%;
 }
 
 
@@ -460,4 +415,4 @@ footer {
          /* body {
             background: lavender;
         } */
-    }
+}
