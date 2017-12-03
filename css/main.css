@@ -168,7 +168,7 @@ nav {
 }
 
 nav li {
-    font-size: 12px;
+    font-size: 20px;
 }
 
 
@@ -333,6 +333,12 @@ section.projects h1 {
     
 }
 
+.top-section:hover {
+    background-color: #000000;
+    filter: alpha(opacity= 60 );
+    opacity: 0.3;
+}
+
 .top-section img {
     width: 100%;
     
@@ -471,6 +477,8 @@ footer {
         width: 500px;
         }
 
+        
+
         .tech-used img {
     width: 15%;
 }
@@ -487,4 +495,6 @@ footer {
          /* body {
             background: lavender;
         } */
+
+       
 }
